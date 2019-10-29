@@ -3,6 +3,10 @@ steps:
   args: ['install'] 
 
 - name: 'gcr.io/cloud-builders/npm'
+  args: ['run', 'build'] 
+
+- name: 'gcr.io/cloud-builders/npm'
+  dir: 'functions'  
   args: ['install'] 
 
 - name: 'gcr.io/$PROJECT_ID/firebase'
