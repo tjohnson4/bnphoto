@@ -18,7 +18,7 @@
     "rewrites": [
       {
         "source":"/menu",
-        "function":"app"   
+        "function":"menu"   
       }
     ]
   },
