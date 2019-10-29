@@ -17,10 +17,6 @@
     ],
     "rewrites": [
       {
-        "source": "**",
-        "destination": "/index.html"
-      },
-      {
         "source":"/menu",
         "function":"app"   
       }
