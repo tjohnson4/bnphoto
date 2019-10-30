@@ -4,5 +4,18 @@ const functions = require('firebase-functions');
 // // https://firebase.google.com/docs/functions/write-firebase-functions
 //
 exports.menu = functions.https.onRequest((request, response) => {
-  response.send("Hello from Firebase!");
+  response.json(
+      {
+        "results": [
+            {
+                "name": "Central Valley",
+                "id": "central-valley"
+            },
+            {
+                "name": "Rio de Janerio",
+                "id": "rio-de-janeiro"
+            }
+        ]
+      }
+  );
 });
