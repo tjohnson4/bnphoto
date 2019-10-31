@@ -14,6 +14,10 @@ exports.menu = functions.https.onRequest((request, response) => {
             {
                 "name": "Rio de Janerio",
                 "id": "rio-de-janeiro"
+            },
+            {
+                "Misc": "Miscellaneous",
+                "id": "miscellaneous"
             }
         ]
       }
